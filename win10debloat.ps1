@@ -35,6 +35,7 @@ $tweaks = @(
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"InstallAdobe",
 	"Install7Zip",
+	"InstallMySoftware",
 	"InstallNotepadplusplus",
 	"InstallMediaPlayerClassic",
 
@@ -235,6 +236,11 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallMySoftware {
+	Write-Output "Installing git"
+	choco install git -y
 }
 
 ##########
